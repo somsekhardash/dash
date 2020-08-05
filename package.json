@@ -1,4 +1,5 @@
 {
+  "homepage": "http://somsekhardash.github.io/dash/",
   "name": "dash-connect",
   "version": "0.1.0",
   "private": true,
@@ -10,16 +11,21 @@
     "@types/node": "^12.12.47",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.19",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-images-upload": "^1.2.8",
     "react-scripts": "3.4.1",
+    "react-scroll": "^1.8.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.88.2",
     "typescript": "^3.7.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +47,10 @@
     ]
   },
   "devDependencies": {
-    "deepmerge": "^4.2.2"
+    "@types/hookrouter": "^2.2.2",
+    "@types/react-scroll": "^1.5.5",
+    "deepmerge": "^4.2.2",
+    "gh-pages": "^3.1.0",
+    "hookrouter": "^1.2.3"
   }
 }
